@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,12 +8,13 @@
   <meta name="description" content="Software engineer portfolio of Reinis Šestakovskis">
   <meta name="author" content="Reinis Šestakovskis">
 
-  <title>(WIP) Reinis Šestakovskis - Portfolio</title>
+  <title>Reinis Šestakovskis - Portfolio</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
   <link rel="stylesheet" href="./assets/color.css">
 </head>
 
@@ -23,8 +24,14 @@
   <div class="style-switcher">
     <span class="style-switcher__control"></span>
     <div class="style-switcher__list">
-      <a class="style-switcher__link style-switcher__link--color"></a>
-      <a class="style-switcher__link style-switcher__link--mono"></a>
+      <a>
+        <span class="style-switcher__link style-switcher__link--light"></span>
+        <span class="style-switcher__link style-switcher__link--dark"></span>
+      </a>
+      <a id="switch-lang">
+        <span class="style-switcher__link flag-icon-background flag-icon-squared flag-icon-lv" lang="lv"></span>
+        <span class="style-switcher__link flag-icon-background flag-icon-squared flag-icon-gb" lang="en"></span>
+      </a>
     </div>
   </div>
   <!--Switcher-->
@@ -34,12 +41,32 @@
     <div class="container">
       <div class="row">
         <div class="menu__wrapper d-none d-lg-block col-md-12">
-          <nav class="">
+          <nav class="" aria-label="Main navigation menu">
             <ul>
-              <li><a href="#hello">Introduction</a></li>
-              <li><a href="#resume">Resume</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a href="#hello">
+                  <span lang="en">Introduction</span>
+                  <span lang="lv">Ievads</span>
+                </a>
+              </li>
+              <li>
+                <a href="#resume">
+                  <span lang="en">Resume</span>
+                  <span lang="lv">Biogrāfija</span>
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio">
+                  <span lang="en">Portfolio</span>
+                  <span lang="lv">Portfolio</span>
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <span lang="en">Contact</span>
+                  <span lang="lv">Kontaktinformācija</span>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -59,12 +86,32 @@
       <div class="mobile-menu__close">
         <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
       </div>
-      <nav class="mobile-menu__wrapper">
+      <nav class="mobile-menu__wrapper" aria-label="Mobile navigation menu">
         <ul>
-          <li><a href="#hello">Introduction</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#hello">
+              <span lang="en">Introduction</span>
+              <span lang="lv">Ievads</span>
+            </a>
+          </li>
+          <li>
+            <a href="#resume">
+              <span lang="en">Resume</span>
+              <span lang="lv">Biogrāfija</span>
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio">
+              <span lang="en">Portfolio</span>
+              <span lang="lv">Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <span lang="en">Contact</span>
+              <span lang="lv">Kontaktinformācija</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -72,27 +119,42 @@
   <!-- Mobile menu -->
 
   <!--Header-->
-  <header class="main-header" style="background-image: url(assets/img_bg_header.jpg)">
+  <header class="main-header" style="background-image: url(assets/images/img_bg_header.webp)">
     <div class="container">
       <div class="row personal-profile">
         <div class="col-md-4 personal-profile__avatar">
-          <img class="" id="avatar" src="./assets/img_avatar.jpg" alt="avatar">
+          <img class="" id="avatar" src="./assets/images/img_avatar.webp" alt="avatar">
         </div>
         <div class="col-md-8">
-          <p class="personal-profile__name">Reinis Šestakovskis_</p>
-          <p class="personal-profile__work">Software engineer, Full-stack Web developer</p>
+          <p id="name_header" class="personal-profile__name">Reinis Šestakovskis</p>
+          <p class="personal-profile__work">
+            <span lang="en">Software engineer, Full-stack Web developer</span>
+            <span lang="lv">Programminženieris, Full-stack tīmekļa izstrādātājs</span>
+          </p>
           <div class="personal-profile__contacts">
             <dl class="contact-list contact-list__opacity-titles">
-              <dt>Email:</dt>
+              <dt>
+                <span lang="en">E-mail:</span>
+                <span lang="lv">E-pasts:</span>
+              </dt>
               <dd><a href="mailto:reinissestakovskis@gmail.com" target="_blank">reinissestakovskis@gmail.com</a></dd>
-              <dt>Location:</dt>
-              <dd>Latvia</dd>
+              <dt>
+                <span lang="en">Location:</span>
+                <span lang="lv">Dzīvesvieta:</span>
+              </dt>
+              <dd>
+                <span lang="en">Latvia</span>
+                <span lang="lv">Latvija</span>
+              </dd>
             </dl>
           </div>
           <p class="personal-profile__social">
-            <a href="https://www.linkedin.com/in/reinis-sestakovskis/" target="_blank"><i
-                class="fa fa-linkedin-square"></i></a>
-            <a href="https://github.com/ReinisS/" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/reinis-sestakovskis/" target="_blank" rel="noopener noreferrer">
+              <em class="fa fa-linkedin-square"></em>
+            </a>
+            <a href="https://github.com/ReinisS/" target="_blank" rel="noopener noreferrer">
+              <em class="fa fa-github"></em>
+            </a>
           </p>
         </div>
       </div>
@@ -104,7 +166,10 @@
   <section id="hello" class="container section">
     <div class="row">
       <div class="col-md-10">
-        <h2 id="hello_header" class="section__title" style="text-indent: 0px;">Hi!_</h2>
+        <h2 class="section__title" style="text-indent: 0px;">
+          <span lang="en" id="hello_header_en">Hi!</span>
+          <span lang="lv" id="hello_header_lv">Sveiki!</span>
+        </h2>
         <p class="section__description">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -113,7 +178,9 @@
           est laborum."
         </p>
         <a href="./assets/cv_reinis_sestakovskis.pdf" class="section_btn site-btn" target="_blank">
-          <img src="./assets/img_btn_icon.png" alt=""> Download CV
+          <img src="./assets/images/img_btn_icon.webp" alt="">
+          <span lang="en">Download CV</span>
+          <span lang="lv">Lejupielādēt CV</span>
         </a>
       </div>
     </div>
@@ -126,7 +193,10 @@
   <section id="resume" class="container section">
     <div class="row">
       <div class="col-md-10">
-        <h2 id="resume_header" class="section__title" style="text-indent: 0px;">Resume_</h2>
+        <h2 class="section__title" style="text-indent: 0px;">
+          <span lang="en" id="resume_header_en">Resume</span>
+          <span lang="lv" id="resume_header_lv">Biogrāfija</span>
+        </h2>
         <p class="section__description">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -138,19 +208,26 @@
     </div>
     <div class="row">
       <div class="col-md-8 section__resume resume-list">
-        <h3 class="resume-list_title">Employment</h3>
+        <h3 class="resume-list_title">
+          <span lang="en">Work experience</span>
+          <span lang="lv">Darba pieredze</span>
+        </h3>
         <div class="resume-list__block">
           <p class="resume-list__block-title">ZZ Dats</p>
           <p class="resume-list__block-date">Dec 2017 - Present</p>
           <p>
-            Software Engineer
+            <span lang="en">Software engineer, Full-stack Web developer</span>
+            <span lang="lv">Programminženieris, Full-stack tīmekļa izstrādātājs</span>
           </p>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-8 section__resume resume-list">
-        <h3 class="resume-list_title">Education</h3>
+        <h3 class="resume-list_title">
+          <span lang="en">Education</span>
+          <span lang="lv">Izglītība</span>
+        </h3>
         <div class="resume-list__block">
           <p class="resume-list__block-title">University of Latvia</p>
           <p class="resume-list__block-date">2016 - 2020</p>
@@ -169,7 +246,10 @@
     </div>
     <div class="row section__resume progress-list js-progress-list">
       <div class="col-md-12">
-        <h3 class="progress-list__title">General skills</h3>
+        <h3 class="progress-list__title">
+          <span lang="en">Skills & technologies used</span>
+          <span lang="lv">Prasmes, izmantotās tehnoloģijas</span>
+        </h3>
       </div>
       <div class="col-md-5 mr-auto">
         <div class="progress-list__skill">
@@ -199,7 +279,10 @@
   <section id="portfolio" class="container section">
     <div class="row">
       <div class="col-md-12">
-        <h2 id="portfolio_header" class="section__title" style="text-indent: 0px;">My projects_</h2>
+        <h2 class="section__title" style="text-indent: 0px;">
+          <span lang="en" id="portfolio_header_en">My projects</span>
+          <span lang="lv" id="portfolio_header_lv">Mani projekti</span>
+        </h2>
       </div>
     </div>
     <div class="portfolio-cards">
@@ -209,55 +292,69 @@
   <!--Portfolio-->
 
   <!--Contact-->
-  <div class="background" style="background-image: url(assets/img_bg_main.jpg)">
+  <div class="background" style="background-image: url(assets/images/img_bg_main.webp)">
     <div id="contact" class="container section">
       <div class="row">
         <div class="col-md-12">
-          <p id="contacts_header" class="section__title" style="text-indent: -9999px;">Get in touch_</p>
+          <p class="section__title" style="text-indent: 0px;">
+            <span lang="en" id="contacts_header_en">Get in touch</span>
+            <span lang="lv" id="contacts_header_lv">Sazinieties ar mani</span>
+          </p>
         </div>
       </div>
       <div class="row contacts">
-        <div class="col-md-5 col-lg-6">
+        <div class="col-md-6 col-lg-6">
           <div class="contacts__list">
             <dl class="contact-list">
-              <dt>Email:</dt>
+              <dt>
+                <span lang="en">E-mail:</span>
+                <span lang="lv">E-pasts:</span>
+              </dt>
               <dd><a href="mailto:reinissestakovskis@gmail.com" target="_blank">reinissestakovskis@gmail.com</a></dd>
             </dl>
           </div>
           <div class="contacts__social">
             <ul>
-              <li><a href="https://www.linkedin.com/in/reinis-sestakovskis/" target="_blank">LinkedIn</a></li>
-              <li><a href="https://github.com/ReinisS/" target="_blank">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/reinis-sestakovskis/" target="_blank"
+                  rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/ReinisS/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-md-7 col-lg-6">
+        <div class="col-md-6 col-lg-6">
           <div class="contacts__form">
-            <p class="contacts__form-title">Or just write me a letter here_</p>
+            <p class="contacts__form-title">
+              <span lang="en">Or just write me a message here</span>
+              <span lang="lv">Vai arī uzrakstiet man ziņu šeit</span>
+            </p>
             <form class="js-form" action="https://formspree.io/moqknlan" method="POST">
               <div class="form-group">
-                <input class="form-field js-field-name" type="text" placeholder="Your name" required="" name="name">
+                <input id="name_field" class="form-field js-field-name" type="text" required="" name="name">
                 <span class="form-validation"></span>
                 <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
               </div>
               <div class="form-group">
-                <input class="form-field js-field-email" type="email" placeholder="Your e-mail" required=""
-                  name="_replyto">
+                <input id="email_field" class="form-field js-field-email" type="email" required="" name="_replyto">
                 <span class="form-validation"></span>
                 <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
               </div>
               <div class="form-group">
-                <textarea class="form-field js-field-message" placeholder="Type the message here" required=""
-                  name="message"></textarea>
+                <textarea id="message_field" class="form-field js-field-message" required="" name="message"></textarea>
                 <span class="form-validation"></span>
                 <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
               </div>
-              <button class="site-btn site-btn--form" type="submit" value="Send">Send</button>
+              <button class="site-btn site-btn--form" type="submit" value="Send">
+                <span lang="en">Send</span>
+                <span lang="lv">Sūtīt</span>
+              </button>
             </form>
           </div>
         </div>
         <div class="footer">
-          <p>© 2016 Design by Ivan Susanin. All Rights Reserved</p>
+          <p>
+            <span lang="en">© 2016 Design by: Ivan Susanin. All Rights Reserved</span>
+            <span lang="lv">© 2016 Dizains: Ivan Susanin. Visas tiesības aizsargātas</span>
+          </p>
         </div>
       </div>
     </div>
@@ -309,6 +406,9 @@
   <script src="./assets/mbclicker.min.js"></script>
   <script src="./assets/site-btn.js"></script>
   <script src="./assets/style-switcher.js"></script>
+  <script src="./assets/language-switcher.js"></script>
+  <script src="./assets/cursor.js"></script>
   <!-- Scripts -->
 </body>
+
 </html>
