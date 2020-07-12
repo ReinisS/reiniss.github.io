@@ -19,7 +19,7 @@ $('[lang="lv"]').hide();
 changeOtherText();
 
 // https://stackoverflow.com/a/43033380
-$('#switch-lang').click(function () {
+$('.switch-lang').click(function () {
     $('[lang="lv"]').toggle();
     $('[lang="en"]').toggle();
     if (lang === 'en') {

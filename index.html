@@ -21,22 +21,6 @@
 
 <body>
 
-  <!--Switcher-->
-  <div class="style-switcher">
-    <span class="style-switcher__control"></span>
-    <div class="style-switcher__list">
-      <a>
-        <span class="style-switcher__link style-switcher__link--light"></span>
-        <span class="style-switcher__link style-switcher__link--dark"></span>
-      </a>
-      <a id="switch-lang">
-        <span class="style-switcher__link flag-icon-background flag-icon-squared flag-icon-gb" lang="lv"></span>
-        <span class="style-switcher__link flag-icon-background flag-icon-squared flag-icon-lv" lang="en"></span>
-      </a>
-    </div>
-  </div>
-  <!--Switcher-->
-
   <!--Main menu-->
   <div class="menu">
     <div class="container">
@@ -68,13 +52,33 @@
                   <span lang="lv">Kontaktinformācija</span>
                 </a>
               </li>
+              <div class="settings_list">
+                <a>
+                  <span class="settings_list__link fontawesomebg fontawesomebg--light"></span>
+                  <span class="settings_list__link fontawesomebg fontawesomebg--dark"></span>
+                </a>
+                <a class="switch-lang">
+                  <span class="settings_list__link flag-icon-background flag-icon-squared flag-icon-gb" lang="lv"></span>
+                  <span class="settings_list__link flag-icon-background flag-icon-squared flag-icon-lv" lang="en"></span>
+                </a>
+              </div>
             </ul>
           </nav>
         </div>
-        <div class="menu__wrapper col-md-12 d-lg-none">
+        <div class="menu__mobile menu__wrapper col-md-12 d-lg-none">
           <button type="button" class="menu__mobile-button">
             <span><i class="fa fa-bars" aria-hidden="true"></i></span>
           </button>
+          <div class="settings_list">
+            <a>
+              <span class="fontawesomebg fontawesomebg--light settings_list__link"></span>
+              <span class="fontawesomebg fontawesomebg--dark settings_list__link"></span>
+            </a>
+            <a class="switch-lang">
+              <span class="settings_list__link flag-icon-background flag-icon-squared flag-icon-gb" lang="lv"></span>
+              <span class="settings_list__link flag-icon-background flag-icon-squared flag-icon-lv" lang="en"></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -277,7 +281,7 @@
           <h4>Front-end:</h4>
           <p>
           <ul class="tags">
-            <li>Html5</li>
+            <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript</li>
             <li>Vue.js</li>
@@ -450,7 +454,7 @@
           <div class="portfolio-modal__stack">
             <p class="portfolio-modal__stack-title">Using stack:</p>
             <ul class="tags">
-              <li>Html5</li>
+              <li>HTML5</li>
               <li>JavaScript</li>
             </ul>
           </div>
