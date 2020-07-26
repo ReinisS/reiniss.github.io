@@ -233,14 +233,6 @@ hr {
   (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)
 ) {
 }
-@supports (
-  (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)
-) {
-}
-@supports (
-  (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)
-) {
-}
 .d-none {
   display: none !important;
 }

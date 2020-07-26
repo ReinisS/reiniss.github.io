@@ -1,108 +1,23 @@
-a {
-  color: rgb(140, 140, 250);
-}
-::-webkit-scrollbar-track-piece {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-}
-::-webkit-scrollbar-track {
-  background-color: rgba(255, 255, 255, 0.3) !important;
-}
-::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.5) !important;
-}
-
-html {
-  color: rgb(191, 191, 191);
-  background: rgb(31, 31, 31) !important;
-}
-body {
-  background-color: rgb(31, 31, 31);
-  background-image: none !important;
-}
-input,
-textarea,
-button {
-  color: rgb(191, 191, 191);
-  background-color: rgb(31, 31, 31);
-}
-
-html {
-  filter: contrast(100%) brightness(100%) saturate(100%);
-}
-
-html {
-  font-family: sans-serif;
-  text-size-adjust: 100%;
-}
-body {
-  margin: 0px;
-}
-header,
-nav,
-section {
-  display: block;
-}
-a {
-  background-color: transparent;
-}
-a:active,
-a:hover {
-  outline: 0px;
-}
-img {
-  border: 0px;
-}
-hr {
-  box-sizing: content-box;
-  height: 0px;
-}
-button,
-input,
-textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0px;
-}
-button {
-  overflow: visible;
-}
-button {
-  text-transform: none;
-}
-button {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-input {
-  line-height: normal;
-}
-textarea {
-  overflow: auto;
-}
+@charset "UTF-8";
+/*!
+ * Bootstrap v4.0.0-beta (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 @media print {
   *,
-  ::after,
-  ::before {
-    color: rgb(0, 0, 0) !important;
+  :after,
+  :before {
     text-shadow: none !important;
-    background: 0px 0px !important;
     box-shadow: none !important;
   }
   a,
   a:visited {
     text-decoration: underline;
   }
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-  a[href^="#"]::after {
-    content: "";
-  }
   img {
-    break-inside: avoid;
-  }
-  img {
-    max-width: 100% !important;
+    page-break-inside: avoid;
   }
   h2,
   h3,
@@ -112,266 +27,14 @@ textarea {
   }
   h2,
   h3 {
-    break-after: avoid;
-  }
-}
-* {
-  box-sizing: border-box;
-}
-::after,
-::before {
-  box-sizing: border-box;
-}
-html {
-  font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: rgb(191, 191, 191);
-  background-color: rgb(28, 28, 33);
-}
-button,
-input,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-a {
-  color: rgb(156, 194, 227);
-  text-decoration: none;
-}
-a:focus,
-a:hover {
-  color: rgb(156, 194, 227);
-  text-decoration: underline;
-}
-a:focus {
-  outline: -webkit-focus-ring-color auto 5px;
-  outline-offset: -2px;
-}
-img {
-  vertical-align: middle;
-}
-hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-width: 1px 0px 0px;
-  border-right-style: initial;
-  border-bottom-style: initial;
-  border-left-style: initial;
-  border-right-color: initial;
-  border-bottom-color: initial;
-  border-left-color: initial;
-  border-image: initial;
-  border-top-style: solid;
-  border-top-color: rgb(43, 43, 43);
-}
-h2,
-h3,
-h4 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-h2,
-h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-p {
-  margin: 0px 0px 10px;
-}
-ul {
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-dl {
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-dd,
-dt {
-  line-height: 1.42857;
-}
-dt {
-  font-weight: 700;
-}
-dd {
-  margin-left: 0px;
-}
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.col-lg-6,
-.col-md-10,
-.col-md-12,
-.col-md-4,
-.col-md-6,
-.col-md-8 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-@media (min-width: 992px) {
-  .col-md-10,
-  .col-md-12,
-  .col-md-4,
-  .col-md-6,
-  .col-md-8 {
-    float: left;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-  .col-md-10 {
-    width: 83.3333%;
-  }
-  .col-md-8 {
-    width: 66.6667%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-4 {
-    width: 33.3333%;
-  }
-}
-@media (min-width: 1200px) {
-  .col-lg-6 {
-    float: left;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-}
-.form-group {
-  margin-bottom: 15px;
-}
-.container::after,
-.container::before,
-.row::after,
-.row::before {
-  display: table;
-  content: " ";
-}
-.container::after,
-.row::after {
-  clear: both;
-}
-
-@font-face {
-  font-family: FontAwesome;
-  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0")
-      format("embedded-opentype"),
-    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0")
-      format("woff2"),
-    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0")
-      format("woff"),
-    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0")
-      format("truetype"),
-    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
-      format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-.fa {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 1;
-  font-family: FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-.fa-linkedin-square::before {
-  content: "";
-}
-.fa-github-square::before {
-  content: "";
-}
-.fa-bars::before {
-  content: "";
-}
-
-.flag-icon-background {
-  background-size: contain;
-  background-position: 50% center;
-  background-repeat: no-repeat;
-}
-
-@media print {
-  *,
-  ::after,
-  ::before {
-    text-shadow: none !important;
-    box-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  img {
-    break-inside: avoid;
-  }
-  h2,
-  h3,
-  p {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    break-after: avoid;
+    page-break-after: avoid;
   }
 }
 html {
   font-family: sans-serif;
+}
+@-ms-viewport {
+  width: device-width;
 }
 header,
 nav,
@@ -389,11 +52,11 @@ body {
 h2,
 h3,
 h4 {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 p {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 dl,
@@ -402,20 +65,20 @@ ul {
 }
 dl,
 ul {
-  margin-top: 0px;
+  margin-top: 0;
 }
 dt {
   font-weight: 700;
 }
 dd {
   margin-bottom: 0.5rem;
-  margin-left: 0px;
+  margin-left: 0;
 }
 a {
-  color: rgb(153, 190, 230);
+  color: rgb(156, 194, 227);
 }
 a:hover {
-  color: rgb(153, 190, 230);
+  color: rgb(156, 194, 227);
   text-decoration: underline;
 }
 a:not([href]):not([tabindex]),
@@ -425,7 +88,7 @@ a:not([href]):not([tabindex]):hover {
   text-decoration: none;
 }
 a:not([href]):not([tabindex]):focus {
-  outline: 0px;
+  outline: 0;
 }
 img {
   vertical-align: middle;
@@ -434,10 +97,12 @@ a,
 button,
 input,
 textarea {
+  -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 button:focus {
-  outline: -webkit-focus-ring-color auto 5px;
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 button,
 input,
@@ -470,16 +135,8 @@ h4 {
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-width: 1px 0px 0px;
-  border-right-style: initial;
-  border-bottom-style: initial;
-  border-left-style: initial;
-  border-right-color: initial;
-  border-bottom-color: initial;
-  border-left-color: initial;
-  border-image: initial;
-  border-top-style: solid;
-  border-top-color: rgba(0, 0, 0, 0.1);
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .container {
   margin-right: auto;
@@ -509,7 +166,10 @@ hr {
   }
 }
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
@@ -529,26 +189,31 @@ hr {
 @media (min-width: 768px) {
   .col-md-4 {
     -webkit-box-flex: 0;
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
   }
   .col-md-6 {
     -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
   .col-md-8 {
     -webkit-box-flex: 0;
-    flex: 0 0 66.6667%;
-    max-width: 66.6667%;
+    -ms-flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
   }
   .col-md-10 {
     -webkit-box-flex: 0;
-    flex: 0 0 83.3333%;
-    max-width: 83.3333%;
+    -ms-flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
   }
   .col-md-12 {
     -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -556,20 +221,13 @@ hr {
 @media (min-width: 992px) {
   .col-lg-6 {
     -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 }
 .form-group {
   margin-bottom: 1rem;
-}
-@supports (
-  (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)
-) {
-}
-@supports (
-  (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)
-) {
 }
 @supports (
   (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)
@@ -592,12 +250,53 @@ hr {
   margin-right: auto !important;
 }
 
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+  font-family: FontAwesome;
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0")
+      format("embedded-opentype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0")
+      format("woff2"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0")
+      format("woff"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0")
+      format("truetype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-linkedin-square:before {
+  content: "";
+}
+.fa-github-square:before {
+  content: "";
+}
+.fa-bars:before {
+  content: "";
+}
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
-  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0px;
+  margin: 0;
 }
 header,
 nav,
@@ -606,11 +305,12 @@ section {
 }
 hr {
   box-sizing: content-box;
-  height: 0px;
+  height: 0;
   overflow: visible;
 }
 a {
   background-color: transparent;
+  -webkit-text-decoration-skip: objects;
 }
 img {
   border-style: none;
@@ -621,7 +321,7 @@ textarea {
   font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
-  margin: 0px;
+  margin: 0;
 }
 button,
 input {
@@ -635,6 +335,17 @@ button,
 html [type="button"] {
   -webkit-appearance: button;
 }
+[type="button"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+[type="button"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
 textarea {
   overflow: auto;
 }
@@ -646,11 +357,12 @@ html {
   box-sizing: border-box;
 }
 *,
-::after,
-::before {
+:after,
+:before {
   box-sizing: inherit;
 }
 html {
+  -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
 }
 body {
@@ -662,28 +374,28 @@ body {
 }
 hr,
 ul {
-  margin: 0px;
+  margin: 0;
 }
 ul {
-  padding: 0px;
+  padding: 0;
   list-style: none;
 }
 a {
-  color: rgb(175, 162, 221);
-  transition: all 0.3s ease 0s;
+  color: rgb(156, 194, 227);
+  transition: all 0.3s;
   position: relative;
   text-decoration: none;
   cursor: pointer;
 }
 a:focus,
 a:hover {
-  color: rgb(175, 162, 221);
+  color: rgb(156, 194, 227);
   text-decoration: underline;
 }
 nav {
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Mono", monospace;
+  font-family: Roboto Mono, monospace;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 30px;
@@ -695,39 +407,40 @@ nav ul li a {
   padding-right: 50px;
   color: rgb(191, 191, 191);
 }
-nav ul li a::after {
+nav ul li a:after {
   content: "";
   position: absolute;
   width: 7px;
   height: 2px;
-  bottom: 0px;
+  bottom: 0;
   right: 42px;
   opacity: 0;
-  transition: background 0.3s ease 0s;
+  transition: background 0.3s;
   background: rgb(110, 87, 193);
 }
 nav ul li a:hover {
   text-decoration: none;
-  transition: all 0.15s ease 0s;
+  transition: all 0.15s;
   color: rgb(175, 162, 221);
 }
-nav ul li a:hover::after {
+nav ul li a:hover:after {
   opacity: 1;
 }
 button {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 .personal-profile {
-  color: rgb(255, 255, 255);
-  font-family: "Roboto Mono", monospace;
+  color: #fff;
+  font-family: Roboto Mono, monospace;
   padding-top: 90px;
 }
 .personal-profile .personal-profile__avatar img {
   border-radius: 5px;
-  box-shadow: rgba(97, 97, 97, 0.34) 0px 0px 27px;
+  box-shadow: 0 0 27px rgba(96, 96, 96, 0.34);
   width: 90%;
   height: 380px;
+  -o-object-fit: cover;
   object-fit: cover;
   margin-top: 10px;
   position: relative;
@@ -760,7 +473,7 @@ button {
   font-size: 24px;
   margin-right: 15px;
   opacity: 0.4;
-  color: rgb(255, 255, 255) !important;
+  color: #fff !important;
 }
 .personal-profile .personal-profile__social a:hover {
   opacity: 1;
@@ -769,33 +482,33 @@ button {
   background-color: rgb(110, 87, 193);
   height: 100%;
   background-repeat: no-repeat;
-  background-position: 50% center;
+  background-position: 50%;
   background-size: cover;
   position: relative;
   margin-bottom: 40px;
 }
-.main-header::before {
+.main-header:before {
   background: linear-gradient(
     54deg,
     rgba(74, 76, 181, 0.95) 34%,
     rgba(133, 66, 66, 0.95)
   );
   height: 100%;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   position: absolute;
   content: "";
   z-index: 0;
 }
 @media screen and (max-width: 990px) {
   .main-header {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 .contact-list {
   font-size: 13px;
   line-height: 24px;
-  font-family: "Roboto Mono", monospace;
+  font-family: Roboto Mono, monospace;
 }
 .contact-list dt {
   float: left;
@@ -807,7 +520,7 @@ button {
   margin-bottom: 15px;
 }
 .contact-list dd a {
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 .contact-list.contact-list__opacity-titles dt {
   opacity: 0.4;
@@ -820,7 +533,7 @@ button {
   margin-bottom: 40px;
   font-size: 36px;
   line-height: 42px;
-  font-family: "Roboto Mono", monospace;
+  font-family: Roboto Mono, monospace;
 }
 .section .section__description {
   margin-bottom: 30px;
@@ -858,9 +571,9 @@ button {
 }
 .site-btn.site-btn--form {
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 29px;
-  position: relative;
   border: none !important;
+  box-shadow: 0 1px 29px rgba(0, 0, 0, 0.16);
+  position: relative;
 }
 .site-btn.site-btn--form:hover {
   background-color: rgb(122, 102, 199) !important;
@@ -871,22 +584,23 @@ button {
 }
 .menu {
   position: fixed;
-  padding: 0px;
-  top: 0px;
+  padding: 0;
+  height: 0;
+  top: 0;
   z-index: 100;
   width: 100%;
   height: 70px;
-  transition: all 0.5s ease 0s;
+  transition: all 0.5s;
 }
 .menu .menu__wrapper {
   z-index: 1;
   margin-top: 50px;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s;
 }
 .menu .menu__wrapper nav {
   font-size: 14px;
   line-height: 20px;
-  font-family: "Roboto Mono", monospace;
+  font-family: Roboto Mono, monospace;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -1002,6 +716,44 @@ button {
   position: relative;
   color: rgb(255, 255, 255);
 }
+.resume-list .resume-list__block::before {
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgb(110, 87, 193);
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  background-color: rgb(28, 28, 33);
+  left: 10px;
+}
+.resume-list .resume-list__block:last-child {
+  padding-bottom: 0px;
+}
+.resume-list .resume-list__block-title {
+  text-transform: uppercase;
+  color: rgb(175, 162, 221);
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.resume-list .resume-list__block-date {
+  font-family: Inconsolata, monospace;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(191, 191, 191);
+  padding-bottom: 10px;
+}
+.background {
+  background-color: rgb(110, 87, 193);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% center;
+  background-size: cover;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
 .background::before {
   background: linear-gradient(
     54deg,
@@ -1009,8 +761,8 @@ button {
     rgba(133, 66, 66, 0.95)
   );
   height: 100%;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   position: absolute;
   content: "";
   z-index: 0;
@@ -1085,7 +837,20 @@ button {
   visibility: hidden;
   pointer-events: none;
   position: absolute;
-  right: 0px;
+  right: 0;
+}
+.contacts .contacts__form input:-moz-placeholder,
+.contacts .contacts__form input::-moz-placeholder {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto Mono, monospace;
+}
+.contacts .contacts__form input:-ms-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto Mono, monospace;
 }
 .contacts .contacts__form input:active,
 .contacts .contacts__form input:focus {
@@ -1109,15 +874,28 @@ button {
   font-family: "Roboto Mono", monospace;
 }
 .contacts .contacts__form textarea::-webkit-input-placeholder {
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto Mono", monospace;
+  font-family: Roboto Mono, monospace;
+}
+.contacts .contacts__form textarea:-moz-placeholder,
+.contacts .contacts__form textarea::-moz-placeholder {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto Mono, monospace;
+}
+.contacts .contacts__form textarea:-ms-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto Mono, monospace;
 }
 .contacts .contacts__form textarea:active,
 .contacts .contacts__form textarea:focus {
-  box-shadow: rgb(28, 28, 33) 0px 0px 5px 0px inset;
-  border: 1px solid rgb(28, 28, 33);
+  box-shadow: inset 0 0 5px 0 #fff;
+  border: 1px solid #fff;
   outline: none;
 }
 .contacts .contacts__form textarea:invalid {
@@ -1135,10 +913,10 @@ button {
 .footer {
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto Mono", monospace;
+  font-family: Roboto Mono, monospace;
 }
 .footer {
-  color: rgb(255, 255, 255);
+  color: #fff;
   opacity: 0.4;
   width: 100%;
   text-align: center;
@@ -1150,10 +928,10 @@ button {
   margin-top: 30px;
 }
 .progress-list .progress-list__title {
-  font-family: "Roboto Mono", monospace;
+  font-family: Roboto Mono, monospace;
   letter-spacing: 5px;
   font-weight: 700;
-  color: rgb(191, 191, 191);
+  color: #777;
   margin-bottom: 40px;
 }
 .progress-list .progress-list__title,
@@ -1185,21 +963,21 @@ button {
 .mobile-menu {
   position: fixed;
   top: 20px;
-  left: 0px;
-  width: 0px;
-  height: 0px;
+  left: 0;
+  width: 0;
+  height: 0;
   overflow: hidden;
   text-align: center;
   z-index: 9999;
-  transition: all 0.3s ease 0s;
-  padding: 0px;
+  transition: all 0.3s ease;
+  padding: 0;
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
 }
 .mobile-menu.active {
   height: 100%;
   width: 100%;
-  top: 0px;
+  top: 0;
   opacity: 1;
 }
 .mobile-menu .mobile-menu__wrapper {
@@ -1207,28 +985,32 @@ button {
   overflow: auto;
   font-size: 14px;
   line-height: 20px;
-  font-family: "Roboto Mono", monospace;
+  font-family: Roboto Mono, monospace;
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 60px;
 }
 .mobile-menu .mobile-menu__wrapper ul {
-  padding: 30px 0px;
-  margin: 0px;
+  padding: 30px 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   min-height: 100%;
 }
 .mobile-menu .mobile-menu__wrapper ul li {
   list-style: none;
-  padding: 6px 0px;
+  padding: 6px 0;
 }
 .mobile-menu .mobile-menu__wrapper ul li a {
-  color: rgb(255, 255, 255);
+  color: #fff;
   display: inline-block;
   padding: 11px;
   position: relative;
@@ -1237,14 +1019,14 @@ button {
   opacity: 1;
   text-decoration: none;
 }
-.mobile-menu .mobile-menu__wrapper ul li a::after {
+.mobile-menu .mobile-menu__wrapper ul li a:after {
   background: rgb(28, 28, 33);
   bottom: 14px;
   right: 1px;
 }
 .mobile-menu .mobile-menu__close {
-  color: rgb(255, 255, 255);
-  transition: all 0.3s ease 0s;
+  color: #fff;
+  transition: all 0.3s;
   position: absolute;
   top: 50px;
   background-color: transparent;
@@ -1270,30 +1052,30 @@ a.social_icon {
 .fontawesomebg {
   position: relative;
 }
-.fontawesomebg--light::before {
+.fontawesomebg--light:before {
   position: absolute;
   font-family: FontAwesome;
   font-size: 30px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   top: 5px;
   left: 3px;
   margin-right: 5px;
   content: "\f185";
 }
-.fontawesomebg--dark::before {
+.fontawesomebg--dark:before {
   position: absolute;
   font-family: FontAwesome;
   font-size: 30px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   top: 5px;
   left: 3px;
   margin-right: 5px;
   content: "\f186";
 }
-.menu--active .fontawesomebg::before {
+.menu--active .fontawesomebg:before {
   color: rgb(191, 191, 191);
 }
-.menu__mobile .fontawesomebg::before {
-  top: 0px;
-  left: 0px;
+.menu__mobile .fontawesomebg:before {
+  top: 0;
+  left: 0;
 }
