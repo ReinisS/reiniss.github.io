@@ -277,6 +277,7 @@ hr {
       format("svg");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 .fa {
   display: inline-block;
@@ -412,7 +413,7 @@ nav ul li {
 }
 nav ul li a {
   padding-right: 50px;
-  color: #999;
+  color: #777;
 }
 nav ul li a:after {
   content: "";
@@ -674,7 +675,7 @@ button {
   letter-spacing: 5px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #999;
+  color: #777;
   margin-bottom: 40px;
 }
 .resume-list .resume-list__block {
@@ -711,7 +712,7 @@ button {
   font-family: Inconsolata, monospace;
   font-size: 14px;
   line-height: 20px;
-  color: #999;
+  color: #777;
   padding-bottom: 10px;
 }
 .background {
@@ -900,7 +901,7 @@ button {
   font-family: Roboto Mono, monospace;
   letter-spacing: 5px;
   font-weight: 700;
-  color: #999;
+  color: #777;
   margin-bottom: 40px;
 }
 .progress-list .progress-list__title,

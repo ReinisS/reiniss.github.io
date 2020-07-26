@@ -315,6 +315,7 @@ dd {
       format("svg");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 .fa {
   display: inline-block;
@@ -590,42 +591,7 @@ hr {
 .mr-auto {
   margin-right: auto !important;
 }
-@font-face {
-  font-family: FontAwesome;
-  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0")
-      format("embedded-opentype"),
-    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0")
-      format("woff2"),
-    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0")
-      format("woff"),
-    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0")
-      format("truetype"),
-    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
-      format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
-.fa {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 1;
-  font-family: FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-.fa-linkedin-square::before {
-  content: "";
-}
-.fa-github-square::before {
-  content: "";
-}
-.fa-bars::before {
-  content: "";
-}
+
 html {
   line-height: 1.15;
   text-size-adjust: 100%;
