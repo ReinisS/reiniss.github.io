@@ -17,6 +17,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
   <link rel="stylesheet" href="./assets/color.css">
+  <link rel="preload" href="./assets/dark_theme.css" as="style">
 </head>
 
 <body>
@@ -222,13 +223,13 @@
           <p>
             <span lang="en">
               Software engineer, Full-stack Web developer.<br>
-              Worked on several projects, mainly by being a part of the development team for several new Web
-              applications which provide municipalities with Web services necessary for them.
+              Worked on several projects for the public sector (government and municipality institutions) by being a
+              part of the development team for several new Web applications and systems.
             </span>
             <span lang="lv">
               Programminženieris, Full-stack tīmekļa izstrādātājs.<br>
-              Strādāju vairākos projektos, galvenokārt piedaloties vairāku jaunu tīmekļa informācijas sistēmu izstrādē,
-              nodrošinot pašvaldības ar tām nepieciešamajiem tīmekļa pakalpojumiem.
+              Strādāju vairākos projektos priekš publiskā sektora (valsts un pašvaldības iestādēm), piedaloties vairāku
+              jaunu tīmekļa informācijas sistēmu izstrādē.
             </span>
           </p>
         </div>
@@ -275,8 +276,8 @@
     <div class="row section__resume progress-list">
       <div class="col-md-12">
         <h3 class="progress-list__title">
-          <span lang="en">Skills & technologies used</span>
-          <span lang="lv">Prasmes, izmantotās tehnoloģijas</span>
+          <span lang="en">Skills & technologies used professionally</span>
+          <span lang="lv">Prasmes un profesionāli pielietotās tehnoloģijas</span>
         </h3>
       </div>
       <div class="col-md-6 mr-auto">
@@ -361,7 +362,126 @@
       </div>
     </div>
     <div class="portfolio-cards">
-      TBD
+      <div class="row project-card" data-toggle="modal" data-target="#bandItModal" data-backdrop="true">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="./assets/images/BandIT/img_1.png" alt="BandIT-img">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">
+            <span lang="en">BandIT - A website for coordinating musicians, bands and events</span>
+            <span lang="lv">BandIT - Tīmekļa vietne mūziķu, grupu un pasākumu koordinēšanai</span>
+          </h3>
+          <p class="project-card__description">
+            <span lang="en">
+              BandIT is a CRUD (Create, Read, Update, Delete) website. The user can sign up on the website, create
+              groups and events or update information about them, add other users to their groups, show their planned
+              attendance status to each event and see the attendance status of other users, leave comments on events,
+              etc.
+            </span>
+            <span lang="lv">
+              BandIT ir CRUD tīmekļa vietne (ļauj veikt Create, Read, Update un Delete jeb skatīt, lasīt, atjaunināt un
+              dzēst darbības). Lietotājs var reģistrēties, veidot grupas un pasākumus vai atjaunināt informāciju par
+              tiem, pievienot citus lietotājus savām grupām, parādīt savu plānoto apmeklējuma statusu uz katru pasākumu
+              un redzēt citu lietotāju plānoto apmeklējuma statusu, atstāt komentārus par pasākumiem u.c.
+            </span>
+          </p>
+          <p class="project-card__stack">
+            <span lang="en">Used technologies:</span>
+            <span lang="lv">Izmantotās tehnoloģijas:</span>
+          </p>
+          <ul class="tags">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>PHP (Laravel)</li>
+            <li>MySQL</li>
+          </ul>
+          <a href="https://github.com/ReinisS/BandIT" class="project-card__link" target="_blank"
+            rel="noopener noreferrer">
+            <span lang="en">GitHub repository</span>
+            <span lang="lv">GitHub repozitorijs</span>
+          </a>
+        </div>
+      </div>
+      <div class="row project-card" data-toggle="modal" data-target="#pyPriceModal">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="./assets/images/PyPrice/img_1.png" alt="PyPrice-img">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">
+            <span lang="en">PyPrice - A tool for tracking price changes on Amazon.com items</span>
+            <span lang="lv">PyPrice - Rīks priekš cenu izmaiņu izsekošanas Amazon.com internetveikala precēm</span>
+          </h3>
+          <p class="project-card__description">
+            <span lang="en">
+              PyPrice lets you add links to Amazon.com items and track their prices overtime. At the click of a single
+              button PyPrice automatically visits each of the previously added Amazon.com pages, loads the contents of
+              the website and finds the price of each given item. Afterwards, the price is saved in a JSON file locally.
+              The gathered datapoints can then be viewed in easy-to-understand graphs.
+            </span>
+            <span lang="lv">
+              PyPrice ļauj pievienot saites uz Amazon.com precēm un sekot līdzi to cenu izmaiņām ilgākā laika periodā.
+              Ar vienu pogas klikšķi PyPrice automātiski iziet cauri katrai iepriekš pievienotajai Amazon.com lapai,
+              ielādē tās saturu un atrod katras dotās preces cenu. Pēc tam šī cena tiek saglabāta lokālā JSON failā.
+              Ievāktos preču cenu datus pēc tam var apskatīt viegli uzskatāmās diagrammās.
+            </span>
+          </p>
+          <p class="project-card__stack">
+            <span lang="en">Used technologies:</span>
+            <span lang="lv">Izmantotās tehnoloģijas:</span>
+          </p>
+          <ul class="tags">
+            <li>Python</li>
+            <li>PyQt5</li>
+            <li>Scrapy</li>
+            <li>Matplotlib</li>
+          </ul>
+          <a href="https://github.com/ReinisS/PyPrice" class="project-card__link" target="_blank"
+            rel="noopener noreferrer">
+            <span lang="en">GitHub repository</span>
+            <span lang="lv">GitHub repozitorijs</span>
+          </a>
+        </div>
+      </div>
+      <div class="row project-card" data-toggle="modal" data-target="#audioUpsamplerModal">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="./assets/images/audio_bitrate_upsampler/img_1.png" alt="audio_bitrate_upsampler-img">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">
+            <span lang="en">Audio bitrate upsampling using deep learning neural network</span>
+            <span lang="lv">Audio bitu dziļuma palielināšana, izmantojot dziļo mašīnmācīšanos</span>
+          </h3>
+          <p class="project-card__description">
+            <span lang="en">
+              A research project about using deep machine learning neural networks to upsample audio bitrate to increase
+              the quality of the audio and improve a user's listening experience. Although so far the achieved results
+              haven't been that noteworthy, this has been a great learning experience for me in the fields of machine
+              learning and audio processing.
+            </span>
+            <span lang="lv">
+              Pētnieciskais projekts par dziļās mašīnmācīšanās neironu tīkla izmantošanu, lai palielinātu audio bitu
+              dziļumu, tādējādi uzlabojot audio kvalitāti un uzlabojot gala lietotāja klausīšanās pieredzi. Lai gan
+              pagaidām sasniegtie rezultāti nav bijuši pietiekami ievērojami, šis projekts man ir sniedzis ļoti labu
+              mācību pieredze mašīnmācīšanās un audio apstrādes jomās.
+            </span>
+          </p>
+          <p class="project-card__stack">
+            <span lang="en">Used technologies:</span>
+            <span lang="lv">Izmantotās tehnoloģijas:</span>
+          </p>
+          <ul class="tags">
+            <li>Python</li>
+            <li>Tensorflow</li>
+            <li>Librosa</li>
+          </ul>
+          <!-- <a href="https://github.com/ReinisS/audio_bitrate_upsampling" class="project-card__link" target="_blank"
+            rel="noopener noreferrer">
+            <span lang="en">GitHub repository</span>
+            <span lang="lv">GitHub repozitorijs</span>
+          </a> -->
+        </div>
+      </div>
     </div>
   </section>
   <!--Portfolio-->
@@ -372,7 +492,7 @@
       <div class="row">
         <div class="col-md-12">
           <p class="section__title" style="text-indent: 0px;">
-            <span lang="en" id="contacts_header_en">Get in touch</span>
+            <span lang="en" id="contacts_header_en">Get in touch with me</span>
             <span lang="lv" id="contacts_header_lv">Sazinieties ar mani</span>
           </p>
         </div>
@@ -439,36 +559,100 @@
   </div>
   <!--Contact-->
 
-  <!-- Portfolio Modal -->
-  <!-- <div class="modal fade portfolio-modal" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- BandIT Portfolio Modal -->
+  <div class="modal fade portfolio-modal" id="bandItModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
-        </div>
-        <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
-          <p class="portfolio-modal__title">TBD</p>
-          <img class="portfolio-modal__img" src="./assets/img_project_1_mono.png" alt="modal_img">
-          <p class="portfolio-modal__description">
-            "Lorem ipsum dolor sit amet..."
+          <p class="portfolio-modal__title">
+            <span lang="en">BandIT</span>
+            <span lang="lv">BandIT</span>
           </p>
-          <div class="portfolio-modal__link">
-            <a href="TBD" target="_blank">TBD</a>
+        </div>
+        <div class="modal-body col-md-12 m-auto">
+          <div class="w3-content w3-display-container">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_1.png" style="width:100%">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_2.png" style="width:100%">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_3.png" style="width:100%">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_4.png" style="width:100%">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_5.png" style="width:100%">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_6.png" style="width:100%">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_7.png" style="width:100%">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_8.png" style="width:100%">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_9.png" style="width:100%">
           </div>
-          <div class="portfolio-modal__stack">
-            <p class="portfolio-modal__stack-title">Using stack:</p>
-            <ul class="tags">
-              <li>HTML5</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'bandItSlides')">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'bandItSlides')">&#10095;</button>
         </div>
       </div>
     </div>
-  </div> -->
-  <!-- Portfolio Modal -->
+  </div>
+  <!-- BandIT Portfolio Modal -->
+
+  <!-- PyPrice Portfolio Modal -->
+  <div class="modal fade portfolio-modal" id="pyPriceModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <p class="portfolio-modal__title">
+            <span lang="en">PyPrice</span>
+            <span lang="lv">PyPrice</span>
+          </p>
+        </div>
+        <div class="modal-body col-md-12 m-auto">
+          <div class="w3-content w3-display-container">
+            <img class="pyPriceSlides" src="./assets/images/PyPrice/img_1.png" style="width:100%">
+            <img class="pyPriceSlides" src="./assets/images/PyPrice/img_2.png" style="width:100%">
+            <img class="pyPriceSlides" src="./assets/images/PyPrice/img_3.png" style="width:100%">
+          </div>
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'pyPriceSlides')">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'pyPriceSlides')">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- PyPrice Portfolio Modal -->
+
+  <!-- Audio Upsampler Portfolio Modal -->
+  <div class="modal fade portfolio-modal" id="audioUpsamplerModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <p class="portfolio-modal__title">
+            <span lang="en">Audio bitrate upsampler</span>
+            <span lang="lv">Audio bitu dziļuma palielinātājs</span>
+          </p>
+        </div>
+        <div class="modal-body col-md-12 m-auto">
+          <div class="w3-content w3-display-container">
+            <img class="audioUpsamplerSlides" src="./assets/images/audio_bitrate_upsampler/img_1.png"
+              style="width:100%">
+            <img class="audioUpsamplerSlides" src="./assets/images/audio_bitrate_upsampler/img_2.png"
+              style="width:100%">
+            <img class="audioUpsamplerSlides" src="./assets/images/audio_bitrate_upsampler/img_3.png"
+              style="width:100%">
+          </div>
+
+          <button class="w3-button w3-black w3-display-left"
+            onclick="plusDivs(-1, 'audioUpsamplerSlides')">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right"
+            onclick="plusDivs(1, 'audioUpsamplerSlides')">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Audio Upsampler Portfolio Modal -->
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
