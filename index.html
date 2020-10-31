@@ -369,6 +369,85 @@
       </div>
     </div>
     <div class="portfolio-cards">
+
+      <!-- LoanWebApp -->
+      <div class="row project-card" data-toggle="modal" data-target="#loanWebAppModal" data-backdrop="true">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="./assets/images/LoanWebApp/img_thumbnail.png" alt="LoanWebApp-img">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">
+            <span lang="en">LoanWebApp - A website for recording loan deals</span>
+            <span lang="lv">LoanWebApp - Tīmekļa vietne aizdevumu darījumu reģistrēšanai</span>
+          </h3>
+          <p class="project-card__description">
+            <span lang="en">
+              LoanWebApp is a full-stack Web app which lets the user register persons and operations (loans and repayments) between the registered persons.
+            </span>
+            <span lang="lv">
+              LoanWebApp ir 'full-stack' tīmekļa vietne, kura ļauj reģistrēt personas un darījumus (aizdevumus un aizdevuma atmaksu) starp reģistrētajām personām.
+            </span>
+          </p>
+          <p class="project-card__stack">
+            <span lang="en">Used technologies:</span>
+            <span lang="lv">Izmantotās tehnoloģijas:</span>
+          </p>
+          <ul class="tags">
+            <li>Angular (JavaScript / TypeScript)</li>
+            <li>.NET Core 3.1</li>
+            <li>SQLite</li>
+          </ul>
+          <a href="https://github.com/ReinisS/LoanWebApp" class="project-card__link" target="_blank"
+            rel="noopener noreferrer">
+            <span lang="en">GitHub repository</span>
+            <span lang="lv">GitHub repozitorijs</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- PyPrice -->
+      <div class="row project-card" data-toggle="modal" data-target="#pyPriceModal">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="./assets/images/PyPrice/img_1.png" alt="PyPrice-img">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">
+            <span lang="en">PyPrice - A tool for tracking price changes on Amazon.com items</span>
+            <span lang="lv">PyPrice - Rīks priekš cenu izmaiņu izsekošanas Amazon.com internetveikala precēm</span>
+          </h3>
+          <p class="project-card__description">
+            <span lang="en">
+              PyPrice lets you add links to Amazon.com items and track their prices overtime. At the click of a single
+              button PyPrice automatically visits each of the previously added Amazon.com pages, loads the contents of
+              the website and finds the price of each given item. Afterwards, the price is saved in a JSON file locally.
+              The gathered datapoints can then be viewed in easy-to-understand graphs.
+            </span>
+            <span lang="lv">
+              PyPrice ļauj pievienot saites uz Amazon.com precēm un sekot līdzi to cenu izmaiņām ilgākā laika periodā.
+              Ar vienu pogas klikšķi PyPrice automātiski iziet cauri katrai iepriekš pievienotajai Amazon.com lapai,
+              ielādē tās saturu un atrod katras dotās preces cenu. Pēc tam šī cena tiek saglabāta lokālā JSON failā.
+              Ievāktos preču cenu datus pēc tam var apskatīt viegli uzskatāmās diagrammās.
+            </span>
+          </p>
+          <p class="project-card__stack">
+            <span lang="en">Used technologies:</span>
+            <span lang="lv">Izmantotās tehnoloģijas:</span>
+          </p>
+          <ul class="tags">
+            <li>Python</li>
+            <li>PyQt5</li>
+            <li>Scrapy</li>
+            <li>Matplotlib</li>
+          </ul>
+          <a href="https://github.com/ReinisS/PyPrice" class="project-card__link" target="_blank"
+            rel="noopener noreferrer">
+            <span lang="en">GitHub repository</span>
+            <span lang="lv">GitHub repozitorijs</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- BandIT -->
       <div class="row project-card" data-toggle="modal" data-target="#bandItModal" data-backdrop="true">
         <div class="col-md-6 col-lg-5 project-card__img">
           <img class="" src="./assets/images/BandIT/img_1.png" alt="BandIT-img">
@@ -410,27 +489,33 @@
           </a>
         </div>
       </div>
-      <div class="row project-card" data-toggle="modal" data-target="#pyPriceModal">
+
+      <!-- OperatorFinder -->
+      <div class="row project-card" data-toggle="modal" data-target="#operatorFinderModal" data-backdrop="true">
         <div class="col-md-6 col-lg-5 project-card__img">
-          <img class="" src="./assets/images/PyPrice/img_1.png" alt="PyPrice-img">
+          <img class="" src="./assets/images/OperatorFinder/img_thumbnail.png" alt="OperatorFinder-img">
         </div>
         <div class="col-md-6 col-lg-7 project-card__info">
           <h3 class="project-card__title">
-            <span lang="en">PyPrice - A tool for tracking price changes on Amazon.com items</span>
-            <span lang="lv">PyPrice - Rīks priekš cenu izmaiņu izsekošanas Amazon.com internetveikala precēm</span>
+            <span lang="en">OperatorFinder - A console program for finding missing '+' and '-' operators between numbers</span>
+            <span lang="lv">OperatorFinder - Konsoles programma priekš '+' un '-' operatoru atrašanas starp skaitļiem</span>
           </h3>
           <p class="project-card__description">
             <span lang="en">
-              PyPrice lets you add links to Amazon.com items and track their prices overtime. At the click of a single
-              button PyPrice automatically visits each of the previously added Amazon.com pages, loads the contents of
-              the website and finds the price of each given item. Afterwards, the price is saved in a JSON file locally.
-              The gathered datapoints can then be viewed in easy-to-understand graphs.
+              This console program finds all of the possible combinations of '+' and '-' operators which can be used in-between
+              the given lists of numbers to reach the given targets. The input numbers are read from a text file.
+              <br>
+              Example input: <code>17 3 2 5 = 23</code>
+              <br>
+              Output: <code>17 + 3 - 2 + 5 = 23</code>
             </span>
             <span lang="lv">
-              PyPrice ļauj pievienot saites uz Amazon.com precēm un sekot līdzi to cenu izmaiņām ilgākā laika periodā.
-              Ar vienu pogas klikšķi PyPrice automātiski iziet cauri katrai iepriekš pievienotajai Amazon.com lapai,
-              ielādē tās saturu un atrod katras dotās preces cenu. Pēc tam šī cena tiek saglabāta lokālā JSON failā.
-              Ievāktos preču cenu datus pēc tam var apskatīt viegli uzskatāmās diagrammās.
+              Šī konsoles programma atrod visas iespējamās '+' un '-' operatoru kombinācijas, kuras var tikt ievietotas starp
+              padotajiem skaitļiem, lai iegūtu padoto rezultātu. Ieejas skaitļi tiek nolasīti no teksta (.txt) faila.
+              <br>
+              Ieejas piemērs: <code>17 3 2 5 = 23</code>
+              <br>
+              Iegūtais rezultāts: <code>17 + 3 - 2 + 5 = 23</code>
             </span>
           </p>
           <p class="project-card__stack">
@@ -438,18 +523,17 @@
             <span lang="lv">Izmantotās tehnoloģijas:</span>
           </p>
           <ul class="tags">
-            <li>Python</li>
-            <li>PyQt5</li>
-            <li>Scrapy</li>
-            <li>Matplotlib</li>
+            <li>.NET Core 3.1</li>
           </ul>
-          <a href="https://github.com/ReinisS/PyPrice" class="project-card__link" target="_blank"
+          <a href="https://github.com/ReinisS/BandIT" class="project-card__link" target="_blank"
             rel="noopener noreferrer">
             <span lang="en">GitHub repository</span>
             <span lang="lv">GitHub repozitorijs</span>
           </a>
         </div>
       </div>
+
+      <!-- AudioBitrateUpsampler -->
       <div class="row project-card" data-toggle="modal" data-target="#audioUpsamplerModal">
         <div class="col-md-6 col-lg-5 project-card__img">
           <img class="" src="./assets/images/audio_bitrate_upsampler/img_1.png" alt="audio_bitrate_upsampler-img">
@@ -489,6 +573,7 @@
           </a> -->
         </div>
       </div>
+
     </div>
   </section>
   <!--Portfolio-->
@@ -566,8 +651,8 @@
   </div>
   <!--Contact-->
 
-  <!-- BandIT Portfolio Modal -->
-  <div class="modal fade portfolio-modal" id="bandItModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- LoanWebApp Portfolio Modal -->
+  <div class="modal fade portfolio-modal" id="loanWebAppModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -575,30 +660,24 @@
             <span aria-hidden="true">×</span>
           </button>
           <p class="portfolio-modal__title">
-            <span lang="en">BandIT</span>
-            <span lang="lv">BandIT</span>
+            <span lang="en">LoanWebApp</span>
+            <span lang="lv">LoanWebApp</span>
           </p>
         </div>
         <div class="modal-body col-md-12 m-auto">
           <div class="w3-content w3-display-container">
-            <img class="bandItSlides" src="./assets/images/BandIT/img_1.png" style="width:100%">
-            <img class="bandItSlides" src="./assets/images/BandIT/img_2.png" style="width:100%">
-            <img class="bandItSlides" src="./assets/images/BandIT/img_3.png" style="width:100%">
-            <img class="bandItSlides" src="./assets/images/BandIT/img_4.png" style="width:100%">
-            <img class="bandItSlides" src="./assets/images/BandIT/img_5.png" style="width:100%">
-            <img class="bandItSlides" src="./assets/images/BandIT/img_6.png" style="width:100%">
-            <img class="bandItSlides" src="./assets/images/BandIT/img_7.png" style="width:100%">
-            <img class="bandItSlides" src="./assets/images/BandIT/img_8.png" style="width:100%">
-            <img class="bandItSlides" src="./assets/images/BandIT/img_9.png" style="width:100%">
+            <img class="loanWebAppSlides" src="./assets/images/LoanWebApp/img_1.png" style="width:100%" alt="LoanWebApp-img-1">
+            <img class="loanWebAppSlides" src="./assets/images/LoanWebApp/img_2.png" style="width:100%" alt="LoanWebApp-img-2">
+            <img class="loanWebAppSlides" src="./assets/images/LoanWebApp/img_3.png" style="width:100%" alt="LoanWebApp-img-3">
           </div>
 
-          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'bandItSlides')">&#10094;</button>
-          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'bandItSlides')">&#10095;</button>
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'loanWebAppSlides')">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'loanWebAppSlides')">&#10095;</button>
         </div>
       </div>
     </div>
   </div>
-  <!-- BandIT Portfolio Modal -->
+  <!-- LoanWebApp Portfolio Modal -->
 
   <!-- PyPrice Portfolio Modal -->
   <div class="modal fade portfolio-modal" id="pyPriceModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -615,9 +694,9 @@
         </div>
         <div class="modal-body col-md-12 m-auto">
           <div class="w3-content w3-display-container">
-            <img class="pyPriceSlides" src="./assets/images/PyPrice/img_1.png" style="width:100%">
-            <img class="pyPriceSlides" src="./assets/images/PyPrice/img_2.png" style="width:100%">
-            <img class="pyPriceSlides" src="./assets/images/PyPrice/img_3.png" style="width:100%">
+            <img class="pyPriceSlides" src="./assets/images/PyPrice/img_1.png" style="width:100%" alt="PyPrice-img-1">
+            <img class="pyPriceSlides" src="./assets/images/PyPrice/img_2.png" style="width:100%" alt="PyPrice-img-2">
+            <img class="pyPriceSlides" src="./assets/images/PyPrice/img_3.png" style="width:100%" alt="PyPrice-img-3">
           </div>
 
           <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'pyPriceSlides')">&#10094;</button>
@@ -627,6 +706,66 @@
     </div>
   </div>
   <!-- PyPrice Portfolio Modal -->
+
+  <!-- BandIT Portfolio Modal -->
+  <div class="modal fade portfolio-modal" id="bandItModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <p class="portfolio-modal__title">
+            <span lang="en">BandIT</span>
+            <span lang="lv">BandIT</span>
+          </p>
+        </div>
+        <div class="modal-body col-md-12 m-auto">
+          <div class="w3-content w3-display-container">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_1.png" style="width:100%" alt="BandIT-img-1">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_2.png" style="width:100%" alt="BandIT-img-2">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_3.png" style="width:100%" alt="BandIT-img-3">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_4.png" style="width:100%" alt="BandIT-img-4">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_5.png" style="width:100%" alt="BandIT-img-5">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_6.png" style="width:100%" alt="BandIT-img-6">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_7.png" style="width:100%" alt="BandIT-img-7">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_8.png" style="width:100%" alt="BandIT-img-8">
+            <img class="bandItSlides" src="./assets/images/BandIT/img_9.png" style="width:100%" alt="BandIT-img-9">
+          </div>
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'bandItSlides')">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'bandItSlides')">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- BandIT Portfolio Modal -->
+
+  <!-- OperatorFinder Portfolio Modal -->
+  <div class="modal fade portfolio-modal" id="operatorFinderModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <p class="portfolio-modal__title">
+            <span lang="en">OperatorFinder</span>
+            <span lang="lv">OperatorFinder</span>
+          </p>
+        </div>
+        <div class="modal-body col-md-12 m-auto">
+          <div class="w3-content w3-display-container">
+            <img class="operatorFinderSlides" src="./assets/images/OperatorFinder/img_1.png" style="width:100%" alt="OperatorFinder-img-1">
+          </div>
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'operatorFinderSlides')">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'operatorFinderSlides')">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- OperatorFinder Portfolio Modal -->
 
   <!-- Audio Upsampler Portfolio Modal -->
   <div class="modal fade portfolio-modal" id="audioUpsamplerModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -643,12 +782,9 @@
         </div>
         <div class="modal-body col-md-12 m-auto">
           <div class="w3-content w3-display-container">
-            <img class="audioUpsamplerSlides" src="./assets/images/audio_bitrate_upsampler/img_1.png"
-              style="width:100%">
-            <img class="audioUpsamplerSlides" src="./assets/images/audio_bitrate_upsampler/img_2.png"
-              style="width:100%">
-            <img class="audioUpsamplerSlides" src="./assets/images/audio_bitrate_upsampler/img_3.png"
-              style="width:100%">
+            <img class="audioUpsamplerSlides" src="./assets/images/audio_bitrate_upsampler/img_1.png" style="width:100%" alt="audio_bitrate_upsampler-img-1">
+            <img class="audioUpsamplerSlides" src="./assets/images/audio_bitrate_upsampler/img_2.png" style="width:100%" alt="audio_bitrate_upsampler-img-2">
+            <img class="audioUpsamplerSlides" src="./assets/images/audio_bitrate_upsampler/img_3.png" style="width:100%" alt="audio_bitrate_upsampler-img-3">
           </div>
 
           <button class="w3-button w3-black w3-display-left"

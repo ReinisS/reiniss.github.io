@@ -1404,3 +1404,9 @@ a.social_icon {
 .m-auto {
   margin: auto !important;
 }
+code {
+  font-family: Roboto Mono, monospace;
+  color: rgb(156, 194, 227);
+  background-color: rgb(43, 43, 43);
+  padding: 2px;
+}

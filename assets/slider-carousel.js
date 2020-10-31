@@ -1,8 +1,10 @@
 'use strict';
 
 var slidesClasses = {
-    "bandItSlides": 1,
+    "loanWebAppSlides": 1,
     "pyPriceSlides": 1,
+    "bandItSlides": 1,
+    "operatorFinderSlides": 1,
     "audioUpsamplerSlides": 1,
 };
 
