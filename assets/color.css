@@ -922,6 +922,11 @@ button {
     margin-bottom: 10px;
   }
 }
+.bullet li {
+  font-size: 14px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
 .mobile-menu {
   position: fixed;
   top: 20px;
