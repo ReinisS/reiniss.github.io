@@ -6,13 +6,13 @@ var changeOtherText = function() {
         $('#name_field').attr('placeholder', 'Jūsu vārds');
         $('#email_field').attr('placeholder', 'Jūsu e-pasts');
         $('#message_field').attr('placeholder', 'Ziņas teksts');
-        $('#cv').attr('href', './assets/cv_reinis_sestakovskis_lv.pdf');
+        $('#cv').attr('href', './assets/Resume_ReinisSestakovskis_LV.pdf');
     }
     else {
         $('#name_field').attr('placeholder', 'Your name');
         $('#email_field').attr('placeholder', 'Your e-mail');
         $('#message_field').attr('placeholder', 'Your message');
-        $('#cv').attr('href', './assets/cv_reinis_sestakovskis_en.pdf');
+        $('#cv').attr('href', './assets/Resume_ReinisSestakovskis_EN.pdf');
     }
 }
 
